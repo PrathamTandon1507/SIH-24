@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap" rel="stylesheet">    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Cart</title>
+</head>
+<body>
+    <!-- <div class="navbar">
+        <div class="logo-nav">
+            <div class="logo-img"><img src="images/logo.png"></div>
+            <p class="logo-name">website.com</p>
+        </div>
+        <div class="search-bar-nav">
+            <div class="drop-down">
+                <button class="dropdown-button">
+                    Deliver to <span class="pin-code">400063</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <input type="text" placeholder="Search for medicine & wellness prodcuts...">
+        </div>
+        <div class="upload-nav">
+            <i class="fa-solid fa-upload"></i> Upload
+        </div>
+        <div class="cart-div">
+            <i class="fa-solid fa-cart-shopping"></i> <span clas="cart-total">3</span> 
+        </div>
+    </div> -->
+    <div class="header">
+        Order Summary
+    </div>
+    <div class="center">
+        <div class="left">
+            <div class="products">
+                <h4>PRODUCTS</h4>
+                <div class="product-details">
+                    <div class="product-image">
+                        <img src="images/pill.png">
+                    </div>
+                    <div class="product-info">
+                        <div class="top-prod">
+                        <div class="med-name">Folvite Tablet 45'S</div>
+                        <div class="delete-icon"><i class="fa-solid fa-trash"></i></div>
+                        </div>
+                        <div class="med-total-capsules"> 45S Capsule(s) in a Strip</div>
+                        <div class="med-corp">Mfr: Pfzir ltd</div>
+                        <div class="discount-cost">
+                            <p class="med-amount"><i class="fa-solid fa-indian-rupee-sign"></i> 75.01</p>
+                            <div class="right-amount">
+                            QTY: 1 <i class="fa-solid fa-chevron-down"></i>
+                            </div> 
+                            <!-- <div class="right-amount">
+                                <select class="select-quantity">
+                                    <option> 1</option>
+                                    <option> 2</option>
+                                    <option> 3</option>
+                                    <option> 4</option>
+                                    <option> 5</option>
+                            </div> -->
+                            <div>
+                                <span class="cancel-cost"><i class="fa-solid fa-indian-rupee-sign"></i> 1</span>
+                            <span class="discount-applied"> Save <i class="fa-solid fa-indian-rupee-sign"></i> 2</span>
+                            </div>
+                        </div>
+                        <div class="delivery-date">Delivery between SEPTEMBER-9 and SEPTEMBER-10</div>
+                    </div>
+                </div>
+            </div>
+            <div class="saved-for-later">
+                <h4>SAVED FOR LATER</h4>
+                <p>No items in save for later</p>
+            </div>
+            <p class="featured-header">Featured Products</p>
+            <div class="featured-product">
+                <div class="cart-card">
+                    <div class="cart-card-image">
+                        <img src="images/pill.png" alt="Product Image">
+                    </div>
+                    <div class="cart-card-info">
+                        <p class="product-name">Folvite Tablet 45'S</p>
+                        <div class="cost-container">
+                            <span class="product-cost">₹ 75.01</span>
+                            <span class="cancelled-cost"> ₹ 80.00</span>
+                        </div>
+                        <p class="discount">Save ₹ 5.00</p>
+                        <button class="add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+    <div class="right">
+    <div class="show-discount">
+        <div class="top-discount">
+        <input type="radio" id="toggle-coupons" class="toggle-coupons">
+        <label for="toggle-coupons" class="toggle-label"><span>Apply promo code</span></label>        
+        <i class="fa-solid fa-chevron-down"></i>
+        <p>Get flat discount! Vouchers applicable in payment options.</p>
+        </div>
+    </div>
+    <div class="coupon-box">
+        <div class="coupon-radio"><input type="radio" class="check-coupon">
+        <span>BIG32</span>
+        </div>
+        <p>Get flat 20% off + 12% Cash-in-wallet on meds. Minimum order value: Rs. 1499.</p>
+    </div>
+    <div class="coupon-box">
+        <div class="coupon-radio"><input type="radio" class="check-coupon">
+        <span>NMSNEW</span>
+        </div>
+        <p>Get flat 20% off + 12% Cash-in-wallet on meds. Minimum order value: Rs. 1499.</p>
+    </div>
+    <div class="coupon-box">
+        <div class="coupon-radio"><input type="radio" class="check-coupon">
+        <span>NMS18</span>
+        </div>
+        <p>Get flat 20% off + 12% Cash-in-wallet on meds. Minimum order value: Rs. 1499.</p>
+    </div>
+    <div class="payment-summary">
+        <h4>PAYMENT DETAILS</h4>
+        <div class="amount-summary">
+            <div class="detail-item">
+                <span class="detail-label">MRP</span>
+                <span class="detail-value">₹ 628.10</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Additional Discount</span>
+                <span class="detail-value">- ₹ 6.09</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label">Total Amount</span>
+                <span class="detail-value">₹ 622.01</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label shipping-charge">Shipping/Delivery Charges</span>
+                <span class="no-delivery-fee">Rs. 29.00</span>
+                <span class="detail-value shipping-charge">₹ 0.00</span>
+            </div>
+            <div class="detail-item">
+                <span class="detail-label total-payable">Total Payable</span>
+                <span class="detail-value total-payable-amount">₹ 622.01</span>
+            </div>
+            <button class="proceed-button">Proceed</button>
+        </div>
+    </div>
+    </div>
+    </div>
+        
+    </div>
+</body>
+</html>

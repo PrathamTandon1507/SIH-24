@@ -1,0 +1,443 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F6F6F7;
+    font-family: Lato, Helvetica, sans-serif;
+}
+
+.header {
+    max-height: 80px;
+    width: 100vw;
+    margin-left: 15%;
+    font-size: 2rem;
+    margin-top: 2%;
+    font-weight: 400;
+    margin-bottom: 3%;
+}
+
+.center {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    margin-right: 15%;
+}
+
+.left {
+    width: 150%;
+    height: 100%;
+    margin-left: 15%;
+}
+
+.show-discount, .coupon-box {
+    max-height: 320px;
+    max-width: 400px;
+    background-color: white;
+    font-family: Lato;
+    padding: 20px;
+    margin-bottom: 1%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    color: #737690;
+}
+
+.coupon-box {
+    border: 1px dashed gray;
+    background-color: #F3F7FB;
+    color: black;
+}
+
+.coupon-box p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #83878A;
+}
+
+.top-discount {
+    background-color: white;
+}
+
+.heading-discount {
+    font-weight: 900;
+}
+
+.top-discount span {
+    font-weight: 700;
+}
+
+.top-discount p {
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.top-discount button {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.top-discount i {
+    text-align: right;
+}
+
+.coupon-radio input[type="radio"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
+.products {
+    max-height: 550px;
+    width: 80%;
+    padding: 12px 12px 14px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.products h4 {
+    padding-bottom: 20px;
+    font-family: Lato;
+    color: #83878A;
+    font-size: 12px;
+}
+
+.product-details {
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+}
+
+.product-image {
+    width: 80%;
+    height: auto;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.top-prod {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-icon {
+    cursor: pointer;
+}
+
+.med-name {
+    font-size: 18px;
+    color: #0b1219;
+    font-family: Lato;
+    font-weight: 425;
+    padding-bottom: 7px;
+}
+
+.med-total-capsules {
+    font-size: 16px;
+    color: rgb(115,118,136);
+    font-family: Lato;
+}
+
+.med-corp {
+    color: #7383AB;
+    font-size: 14px;
+    font-style: italic;
+    padding: 5px 0;
+}
+
+.discount-cost {
+    display: grid;
+    grid-template-columns: 1fr 0.2fr;
+}
+
+.med-amount {
+    font-size: 18px;
+    font-weight: bold;
+    color: #EF4281;
+}
+
+.right-amount {
+    max-height: 130px;
+    max-width: 150px;
+    border: 1px solid #EF4281;
+    color: #EF4281;
+    font-size: 12px;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cancel-cost {
+    font-size: 12px;
+    color: #7383AB;
+    text-decoration: line-through;
+}
+
+.cancel-cost i {
+    font-size: 12px;
+}
+
+.discount-applied {
+    font-size: 14px;
+    color: #279371;
+}
+
+.discount-applied i {
+    font-size: 12px;
+}
+
+.delivery-date {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+.payment-summary {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.payment-summary h4 {
+    font-size: 12px;
+    font-family: Lato;
+    color: #83878A;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.amount-summary {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.detail-item:last-child {
+    border-bottom: none;    
+}
+
+.detail-label {
+    font-size: 12px;
+    color: #737690;
+}
+
+.shipping-charge{
+    font-size: 10px;
+}
+
+.no-delivery-fee {
+    color: #83878A;
+    font-size: 10px;
+    text-decoration: line-through;
+}
+
+.detail-value {
+    font-size: 12px;
+    color: #333;
+    font-weight: bold;
+}
+
+.total-payable, .total-payable-amount{
+    color: #3AB6B9;
+    font-weight: 900;
+}
+
+.saved-for-later {
+    max-height: 90px;
+    width: 80%;
+    padding: 12px 12px 14px;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.saved-for-later h4 {
+    color: #83878A;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.saved-for-later p {
+    color: gray;
+    padding-top: 5px;
+    font-size: 12px;
+    font-family: Lato;
+}
+
+.featured-product {
+    max-width: 175px;
+    max-height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 1%;
+}
+
+.featured-header {
+    font-size: 24px;
+    font-family: Lato;
+    color: black;
+    font-weight: bold;
+    padding: 12px 0 12px;
+}
+
+.cart-card {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+.cart-card-image img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+
+.cart-card-info {
+    padding: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.cost-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.product-cost {
+    font-size: 16px;
+    color: #EF4281;
+    font-weight: bold;
+}
+
+.cancelled-cost {
+    font-size: 12px;
+    color: #737690;
+    text-decoration: line-through;
+}
+
+.discount {
+    font-size: 12px;
+    color: #279371;
+    padding: 5px 0;
+}
+
+.add-to-cart-btn, .proceed-button {
+    background-color: #24aeb1;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+}
+
+
+.add-to-cart-btn:hover, .proceed-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    .header {
+        font-size: 1.2rem;
+        margin-bottom: 5%;
+    }
+
+    .center {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right, .left {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .products, .saved-for-later, .payment-summary, .show-discount, .coupon-box {
+        width: 65%;
+    }
+
+    .product-details {
+        grid-template-columns: 1fr; 
+    }
+
+    .amount-summary, .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .center > * {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .header {
+        font-size: 1rem;
+    }
+
+    .product-name, .product-cost {
+        font-size: 12px;
+        padding-top: 4px;
+    }
+
+    .amount-summary, .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .products, .saved-for-later, .payment-summary, .show-discount, .coupon-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 350px) {
+    .header {
+        font-size: 0.8rem;
+    }
+
+    .product-name, .product-cost {
+        font-size: 10px;
+    }
+}
